@@ -11,3 +11,11 @@ def Merging_PDF(pdfs,output):
         pdfmerge.write(f)
 
 
+
+pdfs = ["32.+LinearSearch.pdf","InsertingArray-96.pdf"]
+
+output = "linear-Insertingarray.pdf"
+
+Merging_PDF(pdfs,output)
+
+
