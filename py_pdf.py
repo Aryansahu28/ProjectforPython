@@ -12,7 +12,8 @@ def Merging_PDF(pdfs,output):
 
 
 
-pdfs = ["32.+LinearSearch.pdf","InsertingArray-96.pdf"]
+pdfs = ["C:\Users\wwwvi\Documents32.+LinearSearch.pdf","InsertingArray-96.pdf"]
+
 
 output = "linear-Insertingarray.pdf"
 

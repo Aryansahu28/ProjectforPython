@@ -1,3 +1,1 @@
-noun = "RAvikishan"
-
-print(noun[:-2])
+z

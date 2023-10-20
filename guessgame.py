@@ -12,16 +12,50 @@ print("If your guess is closer than your most recent guess, I'll say you're gett
 print("LET'S PLAY!")
 print(int(rand))
 while True:
-    guess = int(input('Guess the number: '))
+    guess1 = int(input('Guess the number: '))
 
-    if guess == int(rand):
+    if guess1 > 100 or guess1 < 1 :
+        print("Out of bound")
+        break
+
+    if guess1 == int(rand):
         print("Your choice is correct")
         break
 
-    elif guess + 10 < int(rand):
+    elif guess1 + 10 < int(rand) and guess1-10 > int(rand):
         print("COLD")
 
-    elif guess-10 > int(rand) :
+    elif guess1-10 <= int(rand) and guess1+10 >=int(rand) :
         print("You're WARM")
+
+    while True:
+
+        guess2 = int(input("Guess the number again: "))
+
+        if guess2-5 <= guess1 and guess1 <= guess2+5:
+            print("You're Warmer")
+            guess1 = guess2
+            
+        elif guess1>guess2-5 and guess2+5<guess1:
+            print("You're a Colder")
+            guess1 = guess2
+            
+        if guess1 > 100 or guess1 < 1 :
+            print("Out of bound")
+            break
+
+        if guess1 == int(rand):
+            print("Your choice is correct")
+            break
+
+        elif guess1 + 10 < int(rand) and guess1-10 > int(rand):
+            print("COLD")
+
+        elif guess1-10 <= int(rand) and guess1+10 >=int(rand) :
+            print("You're WARM")
+        
+
+
+
 
     
