@@ -22,15 +22,15 @@ while True:
         print("Your choice is correct")
         break
 
-    elif guess1 + 10 < int(rand) and guess1-10 > int(rand):
+    elif guess1 + 10 <= int(rand) or guess1-10 >= int(rand):
         print("COLD")
 
-    elif guess1-10 <= int(rand) and guess1+10 >=int(rand) :
+    elif guess1-10 < int(rand) and guess1+10 >int(rand) :
         print("You're WARM")
 
     while True:
 
-        guess2 = int(input("Guess the number again: "))
+        guess2 = int(input("Guess the number: "))
 
         if guess2-5 <= guess1 and guess1 <= guess2+5:
             print("You're Warmer")
@@ -50,10 +50,11 @@ while True:
 
         elif guess1 + 10 < int(rand) and guess1-10 > int(rand):
             print("COLD")
+            break
 
         elif guess1-10 <= int(rand) and guess1+10 >=int(rand) :
             print("You're WARM")
-        
+            break       
 
 
 
