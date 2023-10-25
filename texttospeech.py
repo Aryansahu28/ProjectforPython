@@ -1,8 +1,8 @@
-from gtts import gTTS
-import os
-myText = 'Shoutout to Rahul,Shoutout to Ravi ,Shoutout to Aaryan'
+import win32com.client
 
-language = "en"
-myobj = gTTS(text=myText, lang=language, slow=False)
-myobj.save("shoutout.mp3")
-os.system("shoutout.mp3")
+speaker = win32com.client.Dispatch("SAPI.SpVoice")
+
+names = ['Ravi','Rahul','Aranav','Tate']
+
+for name in names:
+    speaker.speak(f"Shoutout to {name}")
