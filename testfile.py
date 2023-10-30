@@ -1,5 +1,3 @@
-z = 6
-c = 4
+import time 
 
-c = z
-print(c)
+
