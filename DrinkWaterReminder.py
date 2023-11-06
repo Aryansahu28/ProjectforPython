@@ -22,19 +22,19 @@ s_min_f1 = int(time.strftime("%M"))
 
 if s_hour_f1 == set_time_hour and s_min_f1 == set_time_min :
         speaker.speak("Time to Drink Water")
-     #    continue_input = int(input("If you want to continue enter 1"))
-     #    if continue_input == 1:
-     #      s_hour_f2 = int(time.strftiem("%H"))
-     #      s_min_f2 = int(time.strftime("%M"))
+        continue_input = int(input("If you want to continue enter 1"))
+        if continue_input == 1:
+          s_hour_f2 = int(time.strftiem("%H"))
+          s_min_f2 = int(time.strftime("%M"))
           
-     #      while True:
-     #           if s_hour_f == set_time_hour + 1 and s_min_f == set_time_min:
-     #                speaker.speak("Time to Drink Water")
-     #                keep_moving = int(input("If you want to continue the remainder enter 1 : "))
-     #                if keep_moving == 1:
-     #                     continue
-     #                else:
-     #                     break    
+          while True:
+               if s_hour_f == set_time_hour + 1 and s_min_f == set_time_min:
+                    speaker.speak("Time to Drink Water")
+                    keep_moving = int(input("If you want to continue the remainder enter 1 : "))
+                    if keep_moving == 1:
+                         continue
+                    else:
+                         break    
                     
 
 
