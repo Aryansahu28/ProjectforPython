@@ -6,7 +6,7 @@ def question():
     ans1 = input("Your Answer :- ")
     if ans1 == 'Draupati Murmu':
         print("Your answer is correct")
-        points=+1
+        points=points+1
     else:
         print("Incorrect!")
 
@@ -14,7 +14,7 @@ def question():
     ans2 = input("Your Answer :- ")
     if ans2 == 'Narendra Modi':
         print("Your answer is correct")
-        points=+1
+        points=points+1
     else:
         print("Incorrect!")
 
@@ -22,7 +22,7 @@ def question():
     ans3 = input("Your Answer :- ")
     if ans3 == 'Dr. S. Jaishankar':
         print("Your answer is correct")
-        points=+1
+        points=points+1
     else:
         print("Incorrect!")
     
@@ -30,7 +30,7 @@ def question():
     ans4 = input("Your Answer :- ")
     if ans4 == 'Peacock':
         print("Your answer is correct")
-        points=+1
+        points=points+1
     else:
         print("Incorrect!")
 
@@ -38,7 +38,7 @@ def question():
     ans5 = input("Your Answer :- ")
     if ans5 == 'Shahrukh Khan':
         print("Your answer is correct")
-        points=+1
+        points=points+1
     else:
         print("Incorrect!")
 
